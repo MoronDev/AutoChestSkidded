@@ -9,4 +9,4 @@ getgenv().autoChestConfig = {
     TIMER_SEARCH_DELAY = 0 -- if you are crashing or lagging, increase this value, otherwise leave it as is
 }
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/fdvll/pet-simulator-99/main/autoChest.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MoronDev/AutoChestSkidded/main/MainShitLol.lua"))()
