@@ -1,7 +1,10 @@
+local BigChests
+local mapPath
+local gameId = game.PlaceId
+
 print("Made By firedevil (Ryan | 404678244215029762 | https://discord.gg/ettP4TjbAb)")
 
 wait(15)
-local gameId = game.PlaceId
 
 local function getServer()
     local servers = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. tostring(gameId) .. '/servers/Public?sortOrder=Asc&limit=100')).data
@@ -21,8 +24,7 @@ while true do
     task.wait()
 end
 
-local BigChests
-local mapPath
+print("Made By firedevil (Ryan | 404678244215029762 | https://discord.gg/ettP4TjbAb)")
 
 if game.PlaceId == 8737899170 then
     mapPath = game:GetService("Workspace").Map
