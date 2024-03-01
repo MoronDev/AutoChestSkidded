@@ -1,29 +1,3 @@
-local BigChests
-local mapPath
-local gameId = game.PlaceId
-
-print("Made By firedevil (Ryan | 404678244215029762 | https://discord.gg/ettP4TjbAb)")
-
-wait(15)
-
-local function getServer()
-    local servers = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. tostring(gameId) .. '/servers/Public?sortOrder=Asc&limit=100')).data
-    local server = servers[Random.new():NextInteger(1, 100)]
-    if server then
-        return server
-    else
-        return getServer()
-    end
-end
-
-game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, getServer().id, game.Players.LocalPlayer)
-
-task.wait(10)
-while true do
-    game:GetService("TeleportService"):Teleport(game.PlaceId, game.Players.LocalPlayer)
-    task.wait()
-end
-
 print("Made By firedevil (Ryan | 404678244215029762 | https://discord.gg/ettP4TjbAb)")
 
 if game.PlaceId == 8737899170 then
@@ -45,8 +19,6 @@ end
 repeat
     task.wait()
 until game:IsLoaded()
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/fdvll/pet-simulator-99/main/antiStaff.lua"))()
 
 task.wait(getgenv().autoChestConfig.START_DELAY)
 
